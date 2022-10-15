@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button,
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+/*================= NAVBAR SECTION ==============*/
+.navbar-toggler:focus,
+button:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.nav-item-link:hover {
+    color: #fff;
+}
+
+.nav-item-link:visited,
+.nav-item-link:activate {
+    color: #fff;
+}
+
+
+.log-btn {
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right: .5rem;
+}
+
+.log-btn,
+.sign-btn {
+    padding: .2rem 1rem;
+    border-radius: 5px;
+}
+
+
+/*=============== FULL NAVBAR SECTION ===============*/
+.navbar {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar {
+    padding-top: 20px;
+}
+
+.nav-item-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0.8rem;
+}
+
+.navbar-collapse {
+    padding-top: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.uber-en,
+.uber-product {
+    display: block;
+    color: #fff;
+    column-gap: .5rem;
+    cursor: pointer;
+    padding: .3rem .6rem;
+    border-radius: 6px;
+}
+
+.uber-en:hover,
+.uber-product:hover {
+    background: #a5a5a528;
+}
+
+.uber-pr {
+    column-gap: .5rem;
+}
+
+/*================= HOME SECTION ==============*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1899,h_805/v1613521692/assets/d9/ce6c00-32b0-4b93-9f0d-6f927d93da08/original/Rider_Home_bg_desktop2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    width: 440px;
+    height: 420px;
+    background-color: aliceblue;
+    position: relative;
+    top: 6%;
+    left: 10%;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 90%;
+    height: 80px;
+    background-color: aliceblue;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.button-box .toggle-btn {
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.form-input-ride {
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    transition: .1s;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.drive-button {
+    text-decoration: underline;
+}
+
+.form-input-drive {
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    transition: .1s;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .2rem;
+}
+
+.form-input-drive h2 {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+}
+
+#ride {
+    left: 0px;
+}
+
+#drive {
+    left: 480px;
+}
+
+.form-input-ride-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+}
+
+.l-line {
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 12px;
+    height: 47px;
+    width: 1px;
+    background: #000;
+}
+
+.input-ride-box,
+.input-ride-right {
+    background-color: #a5a5a528;
+}
+
+.input-ride-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-ride-box i {
+    font-size: .6rem;
+}
+
+.input-ride-right i,
+.input-ride-left i {
+    font-size: .6rem;
+}
+
+.input-ride-right,
+.input-ride-box .input-ride-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: .6rem;
+}
+
+.input-ride-left input,
+.input-ride-right input {
+    width: 100%;
+}
+
+.ride-pickup-buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.request-btn,
+.drive-btn {
+    background-color: #000;
+    color: #fff;
+    padding: .6rem 1rem;
+    border-radius: 5px;
+}
+
+.shedule-btn {
+    background-color: #a5a5a528;
+    border-radius: 5px;
+    border: 0;
+    color: #000;
+}
+
+/*================= UBER BUSSINESS SECTION ==============*/
+.uber-bussiness {
+    background-image: url('https://media.cntraveler.com/photos/5a84e860b8ebbd42565cf871/2:1/w_2560%2Cc_limit/Dubai_GettyImages-143769640.jpg');
+    height: 14rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.uber-bussiness-content {
+    padding: 5% 0 0 1rem;
+}
+
+.uber-col-buttons {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.uber-col-buttons button,
+.uber-safty-col-box button {
+    border-bottom: 2px solid #7b7b7b;
+}
+
+.uber-col-box button {
+    border-bottom: 2px solid #7b7b7b;
+}
+
+.uber-col-buttons button:hover,
+.uber-col-box button:hover,
+.uber-safty-col-box button:hover {
+    border-bottom: 2px solid #000;
+}
+
+.ride-uber-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.ride-uber-col {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+.ride-uber-title {
+    margin-bottom: 1rem;
+}
+
+.ride-uber-box-content h2 {
+    margin-bottom: 1rem;
+}
+
+.ride-uber-col img {
+    width: 120px;
+}
+
+.uber-safty-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.uber-safty-about {
+    margin-top: 3rem;
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.ri-home-smile-line,
+.ri-user-3-line,
+.ri-file-list-2-line {
+    font-size: 1.4rem;
+}
+
+/*================= APPS CONTAINER SECTION ==============*/
+.apps {
+    background: #f6f6f6;
+}
+
+.apps-data-box {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1rem;
+    transition: .6s ease-in-out;
+}
+
+.apps-data-box i,
+.accounts-data-box i {
+    font-size: 1.4rem;
+}
+
+.apps-data-box img {
+    width: 120px;
+}
+
+
+/*================= ACCOUNTS SECTION ==============*/
+.accounts-data-box i {
+    margin-left: 2rem;
+}
+
+.apps-data-box:hover.apps-data-box i,
+.accounts-data-box:hover.accounts-data-box i {
+    transform: translateX(10px);
+}
+
+.accounts-data {
+    column-gap: 2rem;
+}
+
+.accounts-data-box {
+    transition: .6s ease-in-out;
+}
+
+.accounts-data-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*================= FOOTER SECTION ==============*/
+.footer {
+    color: #fff;
+    background: #000;
+    padding-top: 3rem;
+}
+
+.footer button {
+    color: #fff;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+}
+
+.footer-data {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    column-gap: 2rem;
+}
+
+.footer-col ul {
+    padding: 0;
+}
+
+.footer-link {
+    column-gap: 1rem;
+}
+
+.footer-link-box {
+    column-gap: .4rem;
+    cursor: pointer;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.footer-right img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.footer-social {
+    display: flex;
+    column-gap: 1rem;
+    margin: 1rem 0;
+}
+
+.footer-social i {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.footer-web {
+    font-size: .850rem;
+}
+
+.footer-web a {
+    color: gray;
+    transition: .6s ease-in-out;
+}
+
+.footer-web a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+
+    /*================ Custom CSS ================*/
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+    }
+
+}
+
+/*=============== Large Devices ===============*/
+@media screen and (max-width: 991px) {
+
+    /*=============== NAVABR SECTION ===============*/
+    .navbar-collapse {
+        background: #1e1d1d99;
+        border-radius: 6px;
+        padding: .9rem;
+        margin-top: 1.6rem;
+    }
+
+    .navbar-brand,
+    .navbar-toggler-icon {
+        font-size: 1.6rem;
+        color: #fff;
+    }
+
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+
+
+    .nav-item-link {
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .uber-pr {
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+
+    /*================= HOME SECTION ==============*/
+    .ride-uber-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*================= UBER SASFTY SECTION ==============*/
+    .uber-safty-about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .uber-safty-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .uber-col-box {
+        margin-top: 2rem;
+    }
+
+    .uber-col-box img {
+        width: 100%;
+    }
+
+    /*================= FOOTER SECTION ==============*/
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .footer-col ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: .3rem;
+        margin-top: 1rem;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    /*=============== APPS SECTION ===============*/
+    .apps-data {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        width: 100%;
+        /* margin: 0 auto; */
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+    }
+}
+
+/*=============== Medium Devices ===============*/
+@media screen and (max-width: 575px) {
+
+    /*================ Custom CSS ===============*/
+    h1 {
+        font-size: 1.95rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+        line-height: 1rem;
+    }
+
+    /*=============== FOOTER SECTION ===============*/
+    .form-box {
+        width: 90%;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .drive-button {
+        font-size: .9rem;
+    }
+
+    .ride-pickup-buttons {
+        flex-direction: column;
+        row-gap: .8rem;
+    }
+
+    .ride-pickup-buttons button {
+        width: 100%;
+    }
+
+    .footer-col h2 {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .footer-col ul i {
+        font-size: .80pxrem;
+    }
+
+    /*=============== UBER SECTION ===============*/
+    .uber-col-box img {
+        width: 100%;
+    }
+
+    .apps-data-box {
+        width: 100%;
+    }
+
+    .apps-data-box h2 {
+        line-height: 1.5rem;
+    }
+
+    .uber-safty-row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+
+    .uber-col-buttons {
+        display: flex;
+        flex-direction: column;
+        row-gap: .9rem;
+    }
+
+    .uber-safty-about {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        row-gap: 1rem;
+    }
+
+    .accounts-data {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .accounts-data-box {
+        width: 100%;
+    }
+
+    .uber-bussiness {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+}
+
+/*=============== Mobile Devices ===============*/
+@media screen and (max-width: 430px) {
+
+    /*=============== Custom CSS ================*/
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+}
+
+/*=============== Small Mobile Devices ===============*/
+@media screen and (max-width: 360px) {
+    .form-box {
+        width: 80%;
+    }
+
+    .input-ride-right input,
+    .input-ride-left input {
+        width: 10%;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
+}
